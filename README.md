@@ -133,3 +133,75 @@
     </build>
 
 </project>
+
+
+
+
+
+HotelReservationManagementSystem
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>CSMB</groupId>
+
+    <artifactId>HotelReservationSystem</artifactId>
+
+    <packaging>jar</packaging>
+
+    <version>1.0-SNAPSHOT</version>
+
+    <name>Hotel Reservation System</name>
+
+    <url>http://localhost:8345/HRS</url>
+
+    <dependencies>
+
+        <!-- Servlet API -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- MySQL Database -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.49</version>
+        </dependency>
+
+        <!-- JUnit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+
+        <finalName>HRS</finalName>
+
+        <plugins>
+
+            <!-- Tomcat Plugin -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+</project>
